@@ -1,10 +1,11 @@
-import math
-def greet():
-    print("hello")
-greet()
 
-def volume_cylinder(radius,height):
-    v=math.pi*math.pow(radius,2) *height
-    print(v)
 
-volume_cylinder(5,10)
+#make parameter optional-make it default
+def divide(a=1,b=1,should_round=False):
+    res =a/b
+    if should_round==True:
+        return round(res,2)
+    else:
+        return res
+
+print(divide())
