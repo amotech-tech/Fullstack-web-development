@@ -1,26 +1,11 @@
-const person ={
-    firstname:"spongebob",
-    lastname:"squarepants",
-    age:21,
-    isEmployed:false,
-    
-     fullName : function() {
-    return this.firstname + " " + this.lastname;
-  }
-}
+const products=[
+    {name:"laptop", price:499,color:"white"},
+     {name:"smartphone", price:899,color:"black"},
+      {name:"mouse", price:50,color:"grey"},
+       {name:"tablet", price:200,color:"red"},
+        {name:"keyboard", price:500,color:"blue"},
+]
+const discount_prices=products.filter((product)=> product.name.includes("phone"));
+console.log(products);
+console.log(discount_prices);
 
-const person2 ={
-    firstname:"kim",
-    lastname:"skils",
-    age:19,
-    isEmployed: true,
-    eat: function(){
-        return "i am eating"
-    }
-}
-
-console.log(person.firstname);
-console.log(person.lastname);
-console.log(person.age);
-console.log(person.fullName());
-console.log(person2.eat());
