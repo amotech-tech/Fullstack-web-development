@@ -4,4 +4,5 @@ for person in people:
     name= person["name"]
     age= person["age"]
     country= person["country"]
-    print(f"Name is {name} Age is {age} country is {country}")
+    if country == "Italy" and age>30:
+        print(f"Name is {name} Age is {age} country is {country}")
